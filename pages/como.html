@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <meta name="Author" content="Camila Sofia Moran">
+    <link rel="stylesheet" href="../style.css">
+    <title>Como sacar una cita</title>
+    </head>
+<body>
+    <header>
+        <aside>
+            <nav>
+                <ul> 
+                 <li class="active"><a href="../index.html">Inicio</a></li>
+                 <li><a href="como.html">Como sacar una foto</a></li>
+                 <li><a href="ref.html">Tipos de referencia</a></li>
+                 <li><a href="cita.html">Sacar una Cita</a></li>
+                 </ul>
+             </nav>
+         </aside>
+    </header>
+    
+   
+
+<div class="formularioCita">
+   
+    <form action="#" method="post">
+
+        <fieldset >
+            <legend >Datos del Cliente:</legend>
+                <div class="contacto">
+
+                    
+                    <label>Nombre:<input type="text" id="nombre" name="nombre" placeholder="Nombre" required> </label>
+                    
+                    <label>Teléfono: <input type="number" id="telefono" name="telefono" placeholder="Ej12345678" required></label>
+                    
+                    <label for="email">Email: <input type="email" id="email" name="email" placeholder="correo@gail.com" required></label>
+                    
+                    
+                </div>
+                <div class="cita">
+                    <h3>Sacar una cita:</h=>
+                    <div class="container mt-5">
+                       <input type="date" id="datepicker" class="form-control">
+                        </div>
+                </div>
+        </fieldset>
+
+    
+                   
+        <fieldset class="botones">
+            <h3>Enviar Datos</h3>
+
+
+               
+            <input type="reset" value="Borrar">
+
+               <input type="submit" value="Enviar">
+
+               
+            </fieldset>
+
+    </form>
+</div>
+
+<script src="../index2.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+ <script>
+ $(document).ready(function() {
+$('#datepicker').datepicker({
+ format: 'yyyy-mm-dd',
+ endDate: '0d',
+startDate: new Date(new Date().getFullYear() - 120, 0, 1),
+ autoclose: true,
+ todayHighlight: true
+ });
+ });
+ function getTodayDate() {           
+     const today = new Date();            
+     const day = String(today.getDate()).padStart(2, '0');            
+     const month = String(today.getMonth() + 1).padStart(2, '0'); 
+     // Enero es 0!           
+      const year = today.getFullYear();  
+                 
+      return `${year}-${month}-${day}`;        
+    }         
+
+$(document).ready(function() {            
+    const todayDate = getTodayDate();            
+    $('#datePicker').attr('min', todayDate);
+});
+
+</script> 
+</script>
+</body>
+</html>
