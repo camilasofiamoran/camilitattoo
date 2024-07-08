@@ -10,23 +10,30 @@
     </head>
 <body>
     <header>
-        <aside>
-            <nav>
-                <ul> 
-                 <li class="active"><a href="../index.html">Inicio</a></li>
-                 <li><a href="como.html">Como sacar una foto</a></li>
-                 <li><a href="ref.html">Tipos de referencia</a></li>
-                 <li><a href="cita.html">Sacar una Cita</a></li>
-                 </ul>
-             </nav>
-         </aside>
-    </header>
+        <button class="botoncito">COTIZACIONES DE TATTOO</button>
+        <div class="barrita">
+            <p>PIDE CITA - CARGA TU REFERENCIA - CONTACTA CON EL ARTISTA </p>
+        </div>
+    <aside>
+        <nav>
+            <ul>
+                 <h1>Pasos a Seguir:</h1>
+               <section class="cajita"><li class="active"><a href="../index.html">Inicio</a></li></section>
+               
+                <section class="cajita"><li><a href="foto.html">Como enviar una foto</a></li></section>
+                <section class="cajita"><li><a href="ref.html">Tipos de referencia</a></li></section>
+               
+
+            </ul>
+        </nav>
+    </aside>
+ </header>       
     
    
 
 <div class="formularioCita">
    
-    <form action="#" method="post">
+    <form id="formCita">
 
         <fieldset >
             <legend >Datos del Cliente:</legend>
@@ -35,9 +42,9 @@
                     
                     <label>Nombre:<input type="text" id="nombre" name="nombre" placeholder="Nombre" required> </label>
                     
-                    <label>Teléfono: <input type="number" id="telefono" name="telefono" placeholder="Ej12345678" required></label>
+                    <label>Teléfono: <input type="numero" id="telefono" name="telefono" placeholder="Ej12345678" required></label>
                     
-                    <label for="email">Email: <input type="email" id="email" name="email" placeholder="correo@gail.com" required></label>
+                    <label for="email">Email: <input type="email" id="mail" name="email" placeholder="correo@gail.com" required></label>
                     
                     
                 </div>
@@ -58,13 +65,18 @@
                
             <input type="reset" value="Borrar">
 
-               <input type="submit" value="Enviar">
+               <input type="button" class="enviar" onclick="enviarFormularioCita()" value="Enviar">
 
                
             </fieldset>
 
     </form>
 </div>
+<footer class="fila">
+		
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">&copy; Todos los derechos reservados.</div>
+    
+</footer>
 
 <script src="../index2.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -97,6 +109,6 @@ $(document).ready(function() {
 });
 
 </script> 
-</script>
+
 </body>
 </html>
