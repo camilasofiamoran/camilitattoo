@@ -1,3 +1,6 @@
+
+/*-------------Bodyyyy----------------------------------------------*/
+
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url('uno.png'); 
@@ -7,20 +10,25 @@ body {
     margin:0;
     transition: background-image 1s ease-in-out;
     color: #4933ef;
-}
-footer{
-	padding:20px 10px;
-}
-
-footer div{
-	background:rgb(114, 47, 214);
-	text-align:center;
-	line-height:50px;
-	color:rgb(62, 6, 216);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background: linear-gradient(to right, #968ae6, #4933ef);
-}
+    background-color: rgb(183, 169, 206);
     
+}
+/*BANNER--------------------------------------------------*/
+.barrita p{
+  color: rgb(52, 42, 114);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+   animation: mover 8s linear infinite ;
+   display: inline-block;
+   padding-left: 100%;
+
+ }
+@keyframes mover {
+ from { transform: translateX(0%); }
+
+  to { transform: translateX(-100%); }
+}
+/*BANNER--------------------------------------------------*/
        .container {
      display: flex;
      flex-direction: column;
@@ -37,10 +45,7 @@ footer div{
      max-width: 300px;
        }
     
-       .preview img {
-     max-width: 100%;
-     display: block;
-       }
+      
        .barrita {
         width: 80%;
         margin: auto;
@@ -51,25 +56,14 @@ footer div{
         
     
         }
-      .barrita p{
-        color: rgb(102, 80, 239);
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 30px;
-         animation: mover 8s linear infinite ;
-         display: inline-block;
-         padding-left: 100%;
-
-       }
-      @keyframes mover {
-       from { transform: translateX(0%); }
       
-        to { transform: translateX(-100%); }
-    }
     .titulito {
       text-align: center;
       font-size:30px;
 
     }
+    
+/*Boton----------------------------------------------*/
     .botoncito {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align:center;
@@ -78,9 +72,8 @@ footer div{
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        color: rgb(73, 56, 186);
-        background: linear-gradient(to right, #968ae6, #4933ef);
-        transition: background 0.3s ease;
+        color: rgb(52, 42, 114);
+        background-image: url("./src/img/cinco.png");
         margin: auto;
         display: block;
         width: 100%;
@@ -89,6 +82,59 @@ footer div{
       .botoncito:active {
         background: linear-gradient(to right, #6b6de4, #083eef);
       }
+      input[type="reset"]{
+        background-color: #e01b32;}
+     input[type="submit"],
+    input[type="reset"] {
+        width: 35%;
+        margin: 10px auto;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        color: #2b039b;
+        cursor: pointer;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px 0px rgba(153, 124, 197, 0.5);
+    }
+    input[type="submit"]{
+      background-color: #7736e9;
+      width: 35%;
+      box-shadow: 0px 0px 10px 0px rgba(95, 48, 237, 0.5);
+      color: rgb(38, 2, 105);
+      font-weight: bold;
+  
+  
+  }
+  .botones{
+ 
+    border-radius: 5px;
+  
+  }
+  .tonbo {
+    width: 35%;
+      margin: 10px auto;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      color: #2b039b;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0px 0px 10px 0px rgba(153, 124, 197, 0.5);
+  }
+  .enviar{
+    width: 35%;
+      margin: 10px auto;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      color: #c2bad8;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0px 0px 10px 0px rgba(153, 124, 197, 0.5);
+      background-color: #7736e9;
+  }
+
+/*Banner--------------------------------------------------*/
       ul{
         list-style: none;
       }
@@ -99,183 +145,161 @@ footer div{
         text-decoration: none;padding: 5px 10px;
         
       }
-      .cajita {
-        background-color:transparent;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(129, 96, 238, 0.5);
-        padding: 20px;
-        width: 45%;
-        text-align: justify;
-        margin: auto;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
         
-        
-      }
-      .galeria {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+/* ------------imagen----------------------------------------------------------------------------*/
+                        .preview img {
+                        max-width: 100%;
+                         display: block;
+                        }
+
+                   .galeria{
+                         display: flex;
+                         flex-wrap: wrap;
+                         justify-content: center;
+                        }
+                        
+                    img { width:40% ;border-radius: 5px;margin: top 30px;margin-bottom: 10px;
+                         box-shadow: 0 0 10px;}
+                    img:hover {transform: scale(1.1);}
+                  
+                          
+                    img {
+                         width: 500px;
+                         height: 350px;
+                         margin: 10px;
+                         border-radius: 10px;  transition: transform 0.5s ease; 
+                         box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.832);
+                         }
+                        
+                    .zoom{
+                         overflow: hidden; 
       
-       img {
-        width: 500px;
-        height: 350px;
-        margin: 10px;
-        border-radius: 10px;  transition: transform 0.5s ease; 
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.832);
-      }
-      
-      .zoom{
-        overflow: hidden; 
-      
-      }
-      .foti {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 30%; 
-        margin-bottom: 20px;
-    }
+                         }
+                    .foti {
+                         display: flex;
+                         justify-content: space-between;
+                         flex-wrap: wrap;
+                         margin: auto;
+                         width: 30%; 
+                         margin-bottom: 20px;
+                         }
     
     
-    .fotito {
-        background-color: transparent;
-        padding: 10px;
-        box-shadow:0px 0px 15px 0px rgba(96, 61, 221, 0.832) #4933ef;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        text-align: center;
-    }
-    
-    
-    
-    
-    @media screen and (max-width: 1300px) {
-        .foti {
-            width: 49%; 
-        }
-    }
-    @media screen and (max-width: 768px) {
-        .foti {
-            width: 100%; 
-        }
-    }
-    
-    .referencias{
-      text-align: center;
-      width: 50px;
+                    .fotito {
+                         background-color: transparent;
+                         padding: 10px;
+                         box-shadow:0px 0px 15px 0px rgba(96, 61, 221, 0.832) #4933ef;
+                         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                              text-align: center;
+                        }
+                     @media screen and (max-width: 1300px) {
+                          .foti {
+                                  width: 49%;
+                                }
+                        }      
+                     @media screen and (max-width: 768px) {
+                          .foti {
+                                  width: 100%; 
+                                }
+                        }
+/*-cajas-----------------------------------------------------------------------------------------*/
+                  .cajita {
+                        background-image: url("./src/img/diez.png");
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 10px rgba(129, 96, 238, 0.5);
+                        padding: 20px;
+                        width: 45%;
+                        text-align: justify;
+                        margin: auto;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}  
+                          .form-control{
+                            width: auto;
 
-    }
-    .titulo1
-    {
-      text-align: center;
-      font-size:60px ;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      color: #083eef;
-    }
-    .form-control{
-      width: auto;
+                      }
+                  .contacto{
+                        column-count: 2;
+                        font-weight: bold;
+                                      }
+                   .contacto input{
+                      width: 100%;
+                      padding: 10px;
+                    margin: 5px;
+                      border: 1px solid #ccc;
+                      border-radius: 20px;
+                      box-sizing: border-box;
+                      background-color: rgb(255, 255, 255);
+                      height: 30px;
+                      
+                      
+                      }
 
-    }
-    .contacto{
-      column-count: 2;
-      font-weight: bold;
-  }
-  .contacto input{
-      width: 100%;
-      padding: 10px;
-    margin: 5px;
-      border: 1px solid #ccc;
-      border-radius: 20px;
-      box-sizing: border-box;
-      background-color: rgb(255, 255, 255);
-      height: 30px;
-      
-      
-   }
-   input[type="submit"]{
-    background-color: #7736e9;
-    width: 35%;
-    box-shadow: 0px 0px 10px 0px rgba(95, 48, 237, 0.5);
-    color: rgb(38, 2, 105);
-    font-weight: bold;
+                 .kjita {
+                    background-color:transparent;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px rgba(129, 96, 238, 0.5);
+                    padding: 20px;
+                    width: 45%;
+                    text-align: justify;
+                    margin: auto;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color: rgb(52, 42, 114);
+                    
+                }
 
+/*-------texto------------------------------------------------------------------------------------------*/
 
-}
- input[type="reset"]{
-    background-color: #e01b32;}
- input[type="submit"],
-input[type="reset"] {
-    width: 35%;
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    color: #2b039b;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px 0px rgba(153, 124, 197, 0.5);
-}
-
-.formularioCita{
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  border-radius:20px ;
-  margin: auto;
-  width: 500px;
-  background-color:rgba(0, 0, 0, 0.245) ;
-}
-.botones{
- 
-  border-radius: 5px;
-
-}
-.explica{ text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #4933ef;
-
-}
-
-.tonbo {
-  width: 35%;
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    color: #2b039b;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px 0px rgba(153, 124, 197, 0.5);
-}
-.kjita {
-  background-color:transparent;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(129, 96, 238, 0.5);
-  padding: 20px;
-  width: 45%;
-  text-align: justify;
-  margin: auto;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+              h4 { 
+                   text-align: center;
   
-  
-}
-h4 { text-align: center;}
-p {
-  display:none;
-}
-.enviar{
-  width: 35%;
-    margin: 10px auto;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    color: #c2bad8;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px 0px rgba(153, 124, 197, 0.5);
-    background-color: #7736e9;
-}
+                   color: rgb(52, 42, 114);
+                }
+              p {
+                   display:none;
+                }
+              .explica{ text-align: center;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                   color: rgb(52, 42, 114);
 
+                }
+              .formularioCita{
+                   text-align: center;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                   border-radius:20px ;
+                   margin: auto;
+                   width: 500px;
+                   background-color:rgba(0, 0, 0, 0.245) ;
+                }
+              .referencias{
+                   text-align: center;
+                   width: 50px;
+
+                }
+              .titulo1
+                {
+                   text-align: center;
+                   font-size:60px ;
+                   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                   color: #083eef;
+                }
+              .mensajito{
+                  text-align: center;
+                }
+
+
+/*--------footer----------------------------------------------------------------------------------------*/
+              footer{
+	                padding:20px 10px;
+                }
+
+              footer div{
+	                background-image: url("../camilitattoo/src/img/diez.png");
+	                text-align:center;
+	                line-height:50px;
+	                color:rgb(44, 42, 50);
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                  background-image: url("./src/img/diez.png");
+                }
 
 
 

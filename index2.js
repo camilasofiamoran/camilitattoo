@@ -1,4 +1,4 @@
-var citaForm=[]
+/*var citaForm=[]
 var actual = 0;
 var fotos=[]
 
@@ -15,7 +15,7 @@ function cambioFondo()
     
 }
 setInterval (cambioFondo,2000)
-cambioFondo ()
+cambioFondo () */.
 
   function enviarFormularioCita() {
   let nombre=document.getElementById("nombre").value 
